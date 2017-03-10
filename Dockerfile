@@ -8,4 +8,6 @@ git clone https://github.com/VirtualFlyBrain/VFB_neo4j.git
 
 ENV PYTHONPATH=/opt/VFB_neo4j/src/
 
+RUN pip3 install psycopg2
+
 CMD ['python3']
