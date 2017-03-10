@@ -1,7 +1,7 @@
 FROM python:3-slim
 
 RUN apt-get -y update && \ 
-apt-get -y install git
+apt-get -y install git curl
 
 RUN cd /opt/ && \
 git clone https://github.com/VirtualFlyBrain/VFB_neo4j.git
