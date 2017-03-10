@@ -1,6 +1,6 @@
 FROM python:3-slim
 
-RUN apt-get -update --quiet && \ 
+RUN apt-get -update --quiet --no-install-recommends && \ 
 apt-get install --quiet git
 
 RUN cd /opt/ && \
