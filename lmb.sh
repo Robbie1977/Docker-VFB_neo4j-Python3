@@ -1,8 +1,10 @@
 #!/bin/bash
 
 # copy authentication (only available on VFB servers)
-curl -o "~/.ssh/id-rsa" "$FILESERVER:/lmb/.ssh/id-rsa"
-curl -o "~/.ssh/id-rsa.pub" "$FILESERVER:/lmb/.ssh/id-rsa.pub"
+curl -o "~/.ssh/id-rsa" "$FILESERVER:/lmb/.ssh/id_rsa"
+curl -o "~/.ssh/id-rsa.pub" "$FILESERVER:/lmb/.ssh/id_rsa.pub"
+curl -o "~/.ssh/known_hosts" "$FILESERVER:/lmb/.ssh/known_hosts"
+chmod 600 ~/.ssh/*
 
 ssh -4 -f -N -o ExitOnForwardFailure=yes -L 3307:127.0.0.1:3306 vfb@flybrain.mrc-lmb.cam.ac.uk
 
