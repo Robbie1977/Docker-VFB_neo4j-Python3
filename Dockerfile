@@ -16,4 +16,10 @@ RUN pip3 install pymysql
 
 RUN pip3 install neo4j-driver
 
+RUN mkdir -p /opt/VFB
+
+COPY lmb.sh /opt/VFB/lmb.sh
+
+RUN chmod +x /opt/VFB/lmb.sh
+
 CMD ['python3']
