@@ -18,6 +18,8 @@ RUN pip3 install neo4j-driver
 
 RUN mkdir -p /opt/VFB
 
+ENV FILESERVER=tftp://vfbds0.inf.ed.ac.uk
+
 COPY lmb.sh /opt/VFB/lmb.sh
 
 RUN chmod +x /opt/VFB/lmb.sh
