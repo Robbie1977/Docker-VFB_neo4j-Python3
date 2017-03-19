@@ -12,4 +12,8 @@ RUN pip3 install psycopg2
 
 RUN pip3 install requests
 
+RUN pip3 install pymysql
+
+RUN pip3 install neo4j-driver
+
 CMD ['python3']
