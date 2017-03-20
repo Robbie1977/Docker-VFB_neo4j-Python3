@@ -6,7 +6,7 @@ curl -o "$HOME/.ssh/id-rsa.pub" "$FILESERVER:/lmb/.ssh/id_rsa.pub"
 curl -o "$HOME/.ssh/known_hosts" "$FILESERVER:/lmb/.ssh/known_hosts"
 chmod 600 ~/.ssh/*
 
-ssh -4 -f -N -o ExitOnForwardFailure=yes -L 3307:127.0.0.1:3306 vfb@flybrain.mrc-lmb.cam.ac.uk
+ssh -i $HOME/.ssh/id-rsa -4 -f -N -o ExitOnForwardFailure=yes -L 3307:127.0.0.1:3306 vfb@flybrain.mrc-lmb.cam.ac.uk
 
 case "$#" in
 1)  python3 $1
