@@ -24,4 +24,6 @@ COPY lmb.sh /opt/VFB/lmb.sh
 
 RUN chmod +x /opt/VFB/lmb.sh
 
+RUN mkdir -p $HOME/.ssh
+
 CMD ['python3']
