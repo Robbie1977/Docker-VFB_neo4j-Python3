@@ -8,6 +8,8 @@ chmod 600 ~/.ssh/*
 
 ssh -i $HOME/.ssh/id-rsa -4 -f -N -o ExitOnForwardFailure=yes -L 3307:127.0.0.1:3306 vfb@flybrain.mrc-lmb.cam.ac.uk
 
+sleep 30s
+
 case "$#" in
 1)  python3 $1
     ;;
