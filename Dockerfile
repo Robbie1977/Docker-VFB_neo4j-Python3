@@ -20,6 +20,10 @@ RUN mkdir -p /opt/VFB
 
 ENV FILESERVER=tftp://vfbds0.inf.ed.ac.uk
 
+ENV KBSERVER=http://kb.virtualflybrain.org:7474
+
+ENV PDBSERVER=http://pdb.virtualflybrain.org:7474
+
 COPY lmb.sh /opt/VFB/lmb.sh
 
 RUN chmod +x /opt/VFB/lmb.sh
