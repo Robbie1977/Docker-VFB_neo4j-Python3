@@ -30,4 +30,6 @@ RUN chmod +x /opt/VFB/lmb.sh
 
 RUN mkdir -p $HOME/.ssh
 
-CMD ['python3']
+RUN echo '    ServerAliveInterval 120' >> /etc/ssh/ssh_config
+
+CMD ['/bin/bash']
