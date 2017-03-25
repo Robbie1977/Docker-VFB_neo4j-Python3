@@ -24,6 +24,16 @@ ENV KBSERVER=http://kb.virtualflybrain.org:7474
 
 ENV PDBSERVER=http://pdb.virtualflybrain.org:7474
 
+ENV PDBuser=user
+
+ENV PDBpassword=password
+
+ENV KBuser=user
+
+ENV KBpassword=password
+
+ENV LMBuser=flycircuit
+
 COPY lmb.sh /opt/VFB/lmb.sh
 
 RUN chmod +x /opt/VFB/lmb.sh
