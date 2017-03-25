@@ -42,4 +42,6 @@ RUN mkdir -p $HOME/.ssh
 
 RUN echo '    ServerAliveInterval 120' >> /etc/ssh/ssh_config
 
+COPY initialiseKBfromLMB.sh /opt/VFB/
+
 CMD ['/bin/bash']
