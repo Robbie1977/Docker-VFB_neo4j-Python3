@@ -34,9 +34,9 @@ ENV KBpassword=password
 
 ENV LMBuser=flycircuit
 
-COPY lmb.sh /opt/VFB/lmb.sh
+COPY connectToLMB.sh /opt/VFB/connectToLMB.sh
 
-RUN chmod +x /opt/VFB/lmb.sh
+RUN chmod +x /opt/VFB/connectToLMB.sh
 
 RUN mkdir -p $HOME/.ssh
 
