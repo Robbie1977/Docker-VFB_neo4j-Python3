@@ -36,7 +36,7 @@ ENV LMBuser=flycircuit
 
 COPY connectToLMB.sh /opt/VFB/connectToLMB.sh
 
-RUN chmod +x /opt/VFB/connectToLMB.sh
+COPY loadFBtoProduction.sh /opt/VFB/loadFBtoProduction.sh
 
 RUN mkdir -p $HOME/.ssh
 
@@ -44,6 +44,6 @@ RUN echo '    ServerAliveInterval 120' >> /etc/ssh/ssh_config
 
 COPY initialiseKBfromLMB.sh /opt/VFB/initialiseKBfromLMB.sh
 
-RUN chmod +x /opt/VFB/initialiseKBfromLMB.sh
+RUN chmod +x /opt/VFB/*.sh
 
 CMD ['/bin/bash']
