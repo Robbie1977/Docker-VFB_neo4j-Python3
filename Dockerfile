@@ -1,4 +1,4 @@
-FROM python:3-slim
+FROM python:3
 
 RUN apt-get -y update && \ 
 apt-get -y install git curl
