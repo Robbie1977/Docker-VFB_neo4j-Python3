@@ -3,11 +3,12 @@
 cd /opt/ && \
 git clone https://github.com/VirtualFlyBrain/VFB_owl.git
 
+cd /opt/VFB_neo4j/src/
 
 echo ''
 echo '** Side loading from vfb owl: add_annonymous types **'
 
-export PYTHONPATH=${WORKSPACE}/VFB_owl/src/code/mod/:${WORKSPACE}/VFB_owl/src/code/owl2neo/:${WORKSPACE}/VFB_owl/src/code/db_maintenance/:${WORKSPACE}/VFB_owl/src/code/entity_checks/:${WORKSPACE}/VFB_owl/src/code/export/:${WORKSPACE}/VFB_owl/src/code/owl_gen/:${WORKSPACE}/VFB_owl/src/code/unit_tests/
+export PYTHONPATH=${WORKSPACE}/VFB_neo4j/src/:${WORKSPACE}/VFB_owl/src/code/mod/:${WORKSPACE}/VFB_owl/src/code/owl2neo/:${WORKSPACE}/VFB_owl/src/code/db_maintenance/:${WORKSPACE}/VFB_owl/src/code/entity_checks/:${WORKSPACE}/VFB_owl/src/code/export/:${WORKSPACE}/VFB_owl/src/code/owl_gen/:${WORKSPACE}/VFB_owl/src/code/unit_tests/
 
 sleep 10
 
