@@ -46,6 +46,8 @@ RUN echo '    ServerAliveInterval 120' >> /etc/ssh/ssh_config
 
 COPY initialiseKBfromLMB.sh /opt/VFB/initialiseKBfromLMB.sh
 
+COPY PDB-sideloading.sh /opt/VFB/PDB-sideloading.sh
+
 RUN chmod +x /opt/VFB/*.sh
 
 CMD ['/bin/bash']
