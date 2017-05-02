@@ -16,7 +16,9 @@ RUN pip3 install pymysql
 
 RUN pip3 install neo4j-driver
 
-RUN mkdir -p /opt/VFB
+RUN mkdir -p /opt/VFB/jython
+
+ADD http://data.virtualflybrain.org/archive/jython.jar /opt/VFB/jython/jython.jar
 
 ENV FILESERVER=tftp://vfbds0.inf.ed.ac.uk
 
