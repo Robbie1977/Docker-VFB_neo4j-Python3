@@ -18,7 +18,7 @@ RUN pip3 install neo4j-driver
 
 RUN mkdir -p /opt/VFB/jython
 
-RUN cd /opt/VFB/jython && wget -r --no-parent http://data.virtualflybrain.org/archive/jython/ 
+RUN cd /opt/VFB/jython && wget -r -nH --cut-dirs=2 -np -R index.html* http://data.virtualflybrain.org/archive/jython/ 
 
 ENV FILESERVER=tftp://vfbds0.inf.ed.ac.uk
 
