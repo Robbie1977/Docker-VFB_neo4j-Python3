@@ -36,7 +36,7 @@ ENV KBpassword=password
 
 ENV LMBuser=flycircuit
 
-ENV WORKSPACE=/opt
+ENV WORKSPACE=/opt/VFB
 
 COPY connectToLMB.sh /opt/VFB/connectToLMB.sh
 
