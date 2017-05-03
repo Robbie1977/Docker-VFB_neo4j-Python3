@@ -1,7 +1,7 @@
 FROM python:3
 
 RUN apt-get -y update && \ 
-apt-get -y install git curl
+apt-get -y install git curl default-jdk
 
 RUN cd /opt/ && \
 git clone https://github.com/VirtualFlyBrain/VFB_neo4j.git
