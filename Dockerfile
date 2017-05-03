@@ -1,7 +1,7 @@
 FROM python:3
 
 RUN apt-get -y update && \ 
-apt-get -y install git curl default-jdk
+apt-get -y install git curl wget default-jdk
 
 RUN cd /opt/ && \
 git clone https://github.com/VirtualFlyBrain/VFB_neo4j.git
@@ -18,7 +18,7 @@ RUN pip3 install neo4j-driver
 
 RUN mkdir -p /opt/VFB/jython
 
-ADD http://data.virtualflybrain.org/archive/jython.jar /opt/VFB/jython/jython.jar
+RUN cd /opt/VFB/jython && wget -r --no-parent https://data.virtualflybrain.org:5000/archive/jython/ 
 
 ENV FILESERVER=tftp://vfbds0.inf.ed.ac.uk
 
