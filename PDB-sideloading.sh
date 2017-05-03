@@ -3,7 +3,7 @@
 cd /opt/ && \
 git clone https://github.com/VirtualFlyBrain/VFB_owl.git
 
-cd /opt/VFB_neo4j/src/
+cd /opt/VFB/VFB_owl/src/
 
 echo ''
 echo '** Side loading from vfb owl: add_annonymous types **'
