@@ -39,6 +39,6 @@ echo ''
 echo '** Denormalization: Make named edges **'
 
 # docker run -e PYTHONPATH="$PYTHONPATH"  -e PDBuser=$PDBuser -e PDBpassword=$PDBpassword -e FILESERVER=$FILESERVER -e PDBSERVER=$PDBSERVER rcourt/docker-vfb_neo4j-python3 python3 ${WORKSPACE}/VFB_neo4j/src/uk/ac/ebi/vfb/neo4j/neo2neo/make_named_edges.py $PDBSERVER $PDBuser $PDBpassword
-python3 ${WORKSPACE}/VFB_neo4j/src/uk/ac/ebi/vfb/neo4j/neo2neo/make_named_edges.py $PDBSERVER $PDBuser $PDBpassword
+python3 ${WORKSPACE}/VFB_neo4j/src/uk/ac/ebi/vfb/neo4j/neo2neo/KB2Prod.py $KBSERVER $KBuser $KBpassword $PDBSERVER $PDBuser $PDBpassword
 
 sleep 10
