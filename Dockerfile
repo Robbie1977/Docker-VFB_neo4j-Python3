@@ -22,9 +22,9 @@ RUN cd /opt/VFB/jython && wget -r -nH --cut-dirs=2 -np -R index.html* http://dat
 
 ENV FILESERVER=tftp://vfbds0.inf.ed.ac.uk
 
-ENV KBSERVER=http://kb.virtualflybrain.org:7474
+ENV KBSERVER=http://kbw.virtualflybrain.org:7474
 
-ENV PDBSERVER=http://pdb.virtualflybrain.org:7474
+ENV PDBSERVER=http://pdl.virtualflybrain.org:7474
 
 ENV PDBuser=user
 
