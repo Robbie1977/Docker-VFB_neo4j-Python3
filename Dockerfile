@@ -42,6 +42,8 @@ COPY connectToLMB.sh /opt/VFB/connectToLMB.sh
 
 COPY loadFBtoProduction.sh /opt/VFB/loadFBtoProduction.sh
 
+COPY once-only-voxel-overlay-to-kb.sh /opt/VFB/once-only-voxel-overlay-to-kb.sh
+
 RUN mkdir -p $HOME/.ssh
 
 RUN echo '    ServerAliveInterval 120' >> /etc/ssh/ssh_config
