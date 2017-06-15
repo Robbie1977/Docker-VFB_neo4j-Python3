@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -e $HOME/.ssh/id-rsa ]; then
+if [ ! -e $HOME/.ssh/id_rsa ]; then
   # copy authentication (only available on VFB servers)
   curl -o "$HOME/.ssh/id-rsa" "$FILESERVER:/lmb/.ssh/id_rsa"
   curl -o "$HOME/.ssh/id-rsa.pub" "$FILESERVER:/lmb/.ssh/id_rsa.pub"
