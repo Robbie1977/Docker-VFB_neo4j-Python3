@@ -8,6 +8,6 @@ if [ ! -e $HOME/.ssh/id_rsa ]; then
 fi
 chmod 600 ~/.ssh/*
 
-ssh -i $HOME/.ssh/id_rsa -4 -f -N -o ExitOnForwardFailure=yes -L 3307:127.0.0.1:3306 vfb@flybrain.mrc-lmb.cam.ac.uk
+autossh -f -nNT -i $HOME/.ssh/id_rsa -R 3307:127.0.0.1:3306 vfb@flybrain.mrc-lmb.cam.ac.uk
 
 sleep 5s
