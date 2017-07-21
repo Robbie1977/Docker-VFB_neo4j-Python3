@@ -16,6 +16,8 @@ RUN pip3 install pymysql
 
 RUN pip3 install neo4j-driver
 
+RUN pip install site
+
 RUN mkdir -p /opt/VFB/jython
 
 RUN cd /opt/VFB/jython && wget -rv -nH --cut-dirs=2 -np -R index.html* http://data.virtualflybrain.org/archive/jython/jython.jar 
